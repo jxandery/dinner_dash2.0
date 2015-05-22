@@ -6,17 +6,8 @@
     <%= javascript_include_tag 'application' %>
     <%= csrf_meta_tags %>
   </head>
-  <div class="row">
-    <div class="col-xs-8" id="restaurant-name">
-    <h1>Stubbs BBQ Austin</h1>
-  </div>
-  <div class="col-xs-4" id="login-register">
-    <%= link_to "Login", '#' %>
-  <%= link_to "Register", '#' %>
-  </div>
-  </div>
   <body>
-
+    <%= render "partials/header" %>
     <%= yield %>
 
   </body>
