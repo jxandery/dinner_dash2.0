@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>DinnerDash20</title>
-  <%= stylesheet_link_tag    'application', media: 'all' %>
-  <%= javascript_include_tag 'application' %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+  <head>
+    <title>DinnerDash20</title>
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+    <%= csrf_meta_tags %>
+  </head>
+  <div class="row">
+    <div class="col-xs-8" id="restaurant-name">
+    <h1>Stubbs BBQ Austin</h1>
+  </div>
+  <div class="col-xs-4" id="login-register">
+    <%= link_to "Login", '#' %>
+  <%= link_to "Register", '#' %>
+  </div>
+  </div>
+  <body>
 
-<%= yield %>
+    <%= yield %>
 
-</body>
+  </body>
 </html>
